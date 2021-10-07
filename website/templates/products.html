@@ -1,6 +1,10 @@
-{%extends 'layout.html'%}
-<head>
-</head>
-<body>
+{%extends 'producttemp.html'%}
 
+
+{%block body%}
+{% for item in benzos %}
+    "£{{item.price}}
+{%endfor%}
+{%endblock%}
 </body>
+
